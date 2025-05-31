@@ -6,7 +6,7 @@ def main():
     text1 = entry.get()
     if text1:
         time.sleep(1)
-        pyautogui.write(text1, interval=0.02)
+        pyautogui.write(text1, interval=0.01)
 
 
 def on_press(key):
