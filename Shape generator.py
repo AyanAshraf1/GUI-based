@@ -91,3 +91,4 @@ Button(window, text="triangle", command=triangle,font=("Impact",40),fg="#00ff00"
 Button(window, text=" heart ", command=heart,font=("Impact",40),fg="#00ff00",bg="blue",
        activebackground="#00ff00", activeforeground="blue").grid(column=3,row=4)
 window.mainloop()
+display.mainloop()
