@@ -94,7 +94,13 @@ def calculate_percentage(window3, obtained_entries, total_entries):
         result_label.config(text=f"Total Percentage: {percentage:.2f}%")
     except ValueError:
         result_label.config(text="Error: Please enter valid numeric values.")
-
+def credits():
+    windowc = Tk()
+    windowc.resizable(False,False)
+    windowc.title("Credits")
+    windowc.config(bg="#00ff00")
+    Label(windowc, text="Credits: Ayan Ashraf", fg="red",bg="#00ff00",font=("consolas", 40)).pack()
+    windowc.mainloop()
 
 window = Tk()
 window.geometry("1200x600")
@@ -107,6 +113,6 @@ Label(window, text="Enter the names of the subject only you need, No need to fil
 
 Button(window, command=main, text="Continue", font=("Impact", 24), fg="red", bg="blue",
        activebackground="red", activeforeground="blue").pack()
-
+Button(window,command=credits, text="Credits", font=("Impact", 24), fg="red", bg="blue",
+       activebackground="red", activeforeground="blue").pack()
 window.mainloop()
-
